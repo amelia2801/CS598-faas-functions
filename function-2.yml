@@ -1,0 +1,9 @@
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080  # specify a remote gateway if we need to, what the programming language is and where our handler is located within the filesystem.
+
+functions:
+  function-2:
+    lang: python
+    handler: ./function-2
+    image: function-2
